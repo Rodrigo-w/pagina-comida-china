@@ -1,0 +1,108 @@
+/* Estilo vintage */
+body {
+    background-color: #f5e6cc;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #da373;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  p {
+    margin: 0 0 1em;
+  }
+  
+  a {
+    color: #d4a373;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #d4a373;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .product h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  .product p {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+  form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"] {
+    border: 1px solid #d4a373;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  form button[type="submit"] {
+    background-color: #d4a373;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+   button[type="submit"]:hover {
+    background-color: #b37a3f;
+  }
+  
+  footer {
+    background-color: #d4a373;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,68 @@
+<!-- El presente producto académico tiene por finalidad implementar el comercio electrónico, mínimo con una forma de pago (paypal o depósito en cuenta), de un producto o servicio  como iniciativa empresarial que cada uno de ustedes tenga o simplemente mejorar la prestancia de nuestra propia empresa -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tienda Online</title>
+  <meta name="description" content="Disfruta de la auténtica comida china en la comodidad de tu hogar. Realiza pedidos online en nuestra tienda de chifa y saborea deliciosos platos de chifa entregados directamente a tu puerta.">
+  <meta name="keywords" content="chifa online, comida china a domicilio, restaurante chifa, comida china delivery, especialidades chinas, platos de chifa, menú chifa, pedidos de chifa, comida oriental, sabores chinos, delicias chinas, gastronomia asiática">
+  <meta name="ucontinental" content="ChinaWok">
+  <link rel="stylesheet" href="styles.css">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda Online</title>
+    <meta name="description" content="Disfruta de la auténtica comida china en la comodidad de tu hogar. Realiza pedidos online en nuestra tienda de chifa y saborea deliciosos platos de chifa entregados directamente a tu puerta.">
+    <meta name="keywords" content="chifa online, comida china a domicilio, restaurante chifa, comida china delivery, especialidades chinas, platos de chifa, menú chifa, pedidos de chifa, comida oriental, sabores chinos, delicias chinas, gastronomia asiática">
+    <meta name="ucontinental" content="ChinaWok">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+</head>
+<body>
+  <!-- Contenido de la página -->
+  <header>
+    <h1>Tienda Online de Chifa</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Menú</h2>
+      <div class="product">
+        <h3>Arroz Chaufa</h3>
+        <p>Precio: $10.00</p>
+        <form id="payment-form" action="#" method="post">
+          <label for="amount">Monto a pagar:</label>
+          <input type="text" id="amount" name="amount" placeholder="Ingrese el monto">
+          <button type="submit" id="pay-button">Pagar</button>
+        </form>
+      </div>
+      <!-- Agrega más productos aquí siguiendo el mismo formato -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 ChinaWok. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    // Función para procesar el pago y mostrar un mensaje de agradecimiento
+    function processPayment(event) {
+      event.preventDefault();
+      const amount = document.getElementById("amount").value;
+      if (amount) {
+        // Aquí puedes agregar la lógica para procesar el pago, por ejemplo, utilizando la API de PayPal
+        // Después de procesar el pago, muestra un mensaje de agradecimiento
+        alert("Gracias por su compra");
+      } else {
+        alert("Por favor, ingrese un monto válido");
+      }
+    }
+    // Agrega un evento de escucha al botón de pago
+    const payButton = document.getElementById("pay-button");
+    payButton.addEventListener("click", processPayment);
+  </script>
+</body>
+</html>
